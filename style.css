@@ -1,0 +1,147 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* css variables */
+:root{
+    --navbar-height:59px ;
+
+}
+
+/*navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+/*navigation bar: logo and image*/
+
+
+#logo{
+    margin: 10px 34px;
+}
+
+
+#logo img{
+    margin:4px 15px ; 
+    height: 40px;
+    border-radius: 100px;
+    
+
+}
+
+/*navigation bar:list styling*/
+
+
+#navbar{
+    position:relative;
+}
+#navbar ul{
+    display:flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*ninja tecknik*/
+#navbar::before{
+   content:"";
+   background-color:black;
+   position:absolute;
+   height:100%;
+   width:100%;
+   z-index:-1;   /*meri img aur content kho background color khe upar aane khe liye esthamal kiya*/
+   opacity:0.4;
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size:1.3rem;
+}
+
+
+#navbar ul li a{
+    color:white;  /*content kha color tha*/
+   display:block;
+   padding: 3px 22px;
+   border-radius:20px;
+   text-decoration: none;
+   
+ }
+
+
+#navbar ul li a:hover{
+    color:black;  /*content kha color tha*/
+    background-color: white;
+  /* <!--
+   display:block;
+   padding: 3px 22px;
+   border-radius:20px;
+   text-decoration: none;
+   -->*/
+ }
+
+ /*Home Section*/
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 400px;
+    justify-content:center;
+    align-items:center;
+ }
+
+ #home::before{   /*pseudo selectors*/
+    content:"";
+   background:url('../bg3.jpg')no-repeat center center/cover;
+   position:absolute;
+   height:100%;
+   width:100%;
+   z-index:-1;   /*meri img aur content kho background color khe upar aane khe liye esthamal kiya*/
+   opacity:0.89;  /*brightness kho increase kharne khe liye esthamal kiya tha*/
+ }
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* utility classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+
+
+ 
+
